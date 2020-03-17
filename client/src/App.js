@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-//import Huddle from "./pages/Huddle";
-//import Active from "./pages/Active";
-//import Snap from "./pages/Snap";
-//import Profile from "./pages/Profile";
+import Huddle from "./pages/Huddle";
+import Active from "./pages/Active";
+import Snap from "./pages/Snap";
+import Profile from "./pages/Profile";
 import Nav from "./components/Nav";
 
 import './App.css';
@@ -17,19 +17,20 @@ function App() {
       <div>
         <Nav />
         <Switch>
+          
           <Route exact path="/youtube" component={Youtube} />
-          <Route exact path="/books" component={Active} />
-          <Route exact path="/books" component={Huddle} />
-          <Route exact path="/books" component={Snap} />
-          <Route exact path="/books" component={Profile} />
+          <Route exact path="/active" component={Active} />
+          <Route exact path="/huddle" component={Huddle} />
+          <Route exact path="/snap" component={Snap} />
+          <Route exact path="/profile" component={Profile} />
 
         </Switch>
       </div>
-    </Router>
+      </Router>
     
      
      
-     
+
     </div>
   );
 }
