@@ -1,0 +1,14 @@
+.Nav {
+    background-color: black;
+
+}
+
+.navbar-brand {
+    color: black;
+
+}
+
+.navbar-brand a:hover{
+    background-color: black;
+
+}

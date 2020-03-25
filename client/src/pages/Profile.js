@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Youtube extends Component {
+class Profile extends Component {
     render(){
         return(
             <div class="test">
@@ -12,4 +12,4 @@ class Youtube extends Component {
     }
 }
 
-export default Youtube;
+export default Profile;

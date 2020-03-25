@@ -7,7 +7,7 @@ import Profile from "./pages/Profile";
 import Nav from "./components/Nav";
 
 import './App.css';
-import Youtube from './Youtube';
+//import Youtube from './Youtube';
 
 function App() {
   return (
@@ -18,9 +18,8 @@ function App() {
         <Nav />
         <Switch>
           
-          <Route exact path="/youtube" component={Youtube} />
-          <Route exact path="/active" component={Active} />
           <Route exact path="/huddle" component={Huddle} />
+          <Route exact path="/active" component={Active} />
           <Route exact path="/snap" component={Snap} />
           <Route exact path="/profile" component={Profile} />
 
