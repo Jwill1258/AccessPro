@@ -1,14 +1,29 @@
-.Nav {
-    background-color: black;
+.navbar {
+    height: 80px;
 
 }
 
-.navbar-brand {
-    color: black;
+
+.brand-image {
+    height: 90px;
+    width: 100px;
 
 }
 
-.navbar-brand a:hover{
-    background-color: black;
+.nav-item {
+    padding-left: 120px;
+    font-size: 20px;
+
+
+}
+
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: white;
+
+}
+
+.navbar-dark .navbar-nav .active>.nav-link:hover {
+    color: orange;
 
 }

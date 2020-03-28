@@ -10,7 +10,7 @@ module.exports = function(app) {
     // Since we're doing a POST with javascript, we can't actually redirect that post into a GET request
     // So we're sending the user back the route to the members page because the redirect will happen on the front end
     // They won't get this or even be able to access this page if they aren't authed
-    res.json("/members");
+    res.json("/login");
   });
 
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
@@ -34,18 +34,7 @@ module.exports = function(app) {
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
-    res.redirect("/");
-  });
-
-  // Route handlebar testing
-  app.get("/test", function(req, res) {
- 
-    //db.model2.findAll({}).then(function(dbdata){
-      //so you are asking to view the index.handlebars page and passing all the data from the model2 schema
-    //res.render("index", dbdata);
-    //});
-    //res.send("test");
-    res.render("404");
+    res.redirect("/login");
   });
 
   // Route for getting some data about our user to be used client side
