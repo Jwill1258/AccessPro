@@ -78,7 +78,7 @@ class Signup extends Component {
                     
                                 type="email" 
                                 name="email"
-                                value={this.state.email}
+                                // value={this.state.email}
                                 className="form-control" 
                                 id="email-input" 
                                 placeholder="Email"/>
@@ -97,10 +97,11 @@ class Signup extends Component {
                                 <span className="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                                 <span className="sr-only">Error:</span> <span className="msg"></span>
                             </div>
-                            <button 
-
-                            type="submit" 
-                            className="btn btn-default">Sign Up</button>
+                            <button className="btn btn-default"> 
+                                <a href="/Huddle">
+                                Signup
+                                </a>
+                            </button>
                             </form>
                             <br />
                             <p>Or log in <a href="/login">here</a></p>

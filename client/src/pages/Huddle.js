@@ -120,12 +120,18 @@ class Huddle extends Component {
                 </Card>
                 <Card title="Live Feed" icon="far fa-Search">
                   <List
+                  
                     type="text"
                     placeholder="Type item here"
                     value={this.state.newItem}
                     onChange={e => this.updateInput("newItem", e.target.value)}
                   />
-                  <button className="add-btn btn-floating" onClick={() => this.addItem()} disabled={!this.state.newItem.length}>Add </button>
+                  <button className="add-btn btn-floating" onClick={() => this.addItem()} disabled={!this.state.newItem.length}>Username:   Jwill: I just had a great arm workout!! #striveforgreatness </button>
+                  <button className="add-btn btn-floating" onClick={() => this.addItem()} disabled={!this.state.newItem.length}>Username:   MGordon: Just declared to Kentuck, dreams come true! </button>
+                  <button className="add-btn btn-floating" onClick={() => this.addItem()} disabled={!this.state.newItem.length}>Username:   King James: Rise and Shine! Lets start this lovely day on a highnote. </button>
+                  <button className="add-btn btn-floating" onClick={() => this.addItem()} disabled={!this.state.newItem.length}>Username:   MBagley: Responding to King James: Preach  big fella!. </button>
+
+
                     
                 </Card>
               </Col>
